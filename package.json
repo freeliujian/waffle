@@ -1,0 +1,29 @@
+{
+  "name": "waffle",
+  "version": "1.0.0",
+  "description": "编写一个简单前端框架",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "babel-standalone": "^6.26.0",
+    "react-dom": "^18.2.0",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeliujian/waffle.git"
+  },
+  "keywords": [],
+  "author": "jian.liu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/freeliujian/waffle/issues"
+  },
+  "homepage": "https://github.com/freeliujian/waffle#readme"
+}
