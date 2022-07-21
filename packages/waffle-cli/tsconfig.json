@@ -1,14 +1,16 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "target": "es5",
+    "target": "ESNext",
     "module": "commonjs",
     "types": [
       "node"
     ],
+    "allowSyntheticDefaultImports": true,
     "outDir": "dist",
     "rootDir": "./src",
-    "baseUrl": "./src"
+    "baseUrl": "./src",
+    "declarationDir": "./dist",
   },
-  "files": ["src/index.ts"]
+  "include": ["./src"],
 }

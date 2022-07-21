@@ -6,8 +6,13 @@
   "directories": {
     "example": "example"
   },
+  "files": [
+    "bin",
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "pnpm -r -filter waffle-cli run build",
+    "dev": "pnpm -r -filter waffle-cli --parallel run dev"
   },
   "repository": {
     "type": "git",
@@ -22,6 +27,14 @@
   "homepage": "https://github.com/freeliujian/waffle#readme",
   "dependencies": {
     "@types/node": "^18.0.6",
+    "glob": "^8.0.3",
     "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^8.2.1",
+    "@types/semver": "^7.3.10",
+    "@types/yargs-parser": "^21.0.0",
+    "esbuild": "^0.14.49",
+    "tslib": "^2.4.0"
   }
 }

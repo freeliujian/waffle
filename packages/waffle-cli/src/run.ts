@@ -1,19 +1,19 @@
 
-const fs = require('fs');
-const path = require('path');
-const chalk = require('chalk');
-const inquirer = require('inquirer');
+import fs from 'fs';
+import path from 'path';
+import chalk from 'chalk';
+import inquirer from 'inquirer';
 
 const cliPath = path.resolve(__dirname,'..');
 
-const start = (config) => {
+const start = (config:any) => {
   console.log('start');
   console.log(config);
   const {mode} = config;
-
+  
 }
 
-const run = async (config) => {
+const run = async (config:any) => {
 
   try {
     return start(config);
@@ -23,4 +23,4 @@ const run = async (config) => {
   }
 };
 
-module.exports = run 
+module.exports = run;
