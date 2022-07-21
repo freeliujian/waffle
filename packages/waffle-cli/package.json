@@ -1,14 +1,14 @@
 {
   "name": "waffle-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "编写一个简单前端框架",
-  "main": "index.js",
+  "main": "./bin/index.js",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start":"tsc -w"
   },
   "bin": {
-    "waffle": "./bin/waffle.js"
+    "waffle-cli": "./bin/waffle.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,11 @@
     "url": "https://github.com/freeliujian/waffle/issues"
   },
   "homepage": "https://github.com/freeliujian/waffle#readme",
-  "dependencies": {}
+  "dependencies": {
+    "chalk": "4.0.0",
+    "commander": "7.2.0",
+    "inquirer": "6.4.1",
+    "semver": "6.1.0",
+    "yargs-parser": "13.1.1"
+  }
 }

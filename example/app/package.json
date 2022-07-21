@@ -4,12 +4,12 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "waffle"
+    "start": "waffle-cli start"
   },
   "keywords": [],
   "author": "jian.liu",
   "license": "ISC",
   "dependencies": {
-    "waffle":"workspace:*"
+    "waffle-cli": "workspace:^1.0.0"
   }
 }

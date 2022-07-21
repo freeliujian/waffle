@@ -6,12 +6,6 @@
   "directories": {
     "example": "example"
   },
-  "dependencies": {
-    "babel-standalone": "^6.26.0",
-    "react-dom": "^18.2.0",
-    "react": "^18.2.0"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/freeliujian/waffle/issues"
   },
-  "homepage": "https://github.com/freeliujian/waffle#readme"
+  "homepage": "https://github.com/freeliujian/waffle#readme",
+  "dependencies": {
+    "@types/node": "^18.0.6",
+    "typescript": "^4.7.4"
+  }
 }
