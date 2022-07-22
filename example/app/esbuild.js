@@ -1,7 +1,7 @@
 const glob = require('glob');
 
 const filePath = glob
-.sync('src/**/*.@(ts|tsx|js|jsx)');
+.sync('src/**/*.@(ts|tsx|js|jsx|css)');
 
 async function start() {
   let esbuild = require('esbuild');

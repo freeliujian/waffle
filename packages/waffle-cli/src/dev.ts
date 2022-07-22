@@ -5,6 +5,7 @@ import portfinder from 'portfinder';
 import { createServer } from 'http';
 import { DEFAULT_ENTRY_POINT, DEFAULT_OUTDIR, DEFAULT_PLATFORM, DEFAULT_PORT, DEFAULT_HOST, DEFAULT_BUILD_PORT } from './constants';
 import { createWebSocketServer } from './server';
+import { style } from './styles';
 
 export const dev = async () => {
     const cwd = process.cwd();
@@ -69,12 +70,12 @@ export const dev = async () => {
                     'process.env.NODE_ENV': JSON.stringify('development'),
                 },
                 external: ['esbuild'],
+                plugins: [style()],
                 entryPoints: [path.resolve(cwd, DEFAULT_ENTRY_POINT)],
             });
             // [Issues](https://github.com/evanw/esbuild/issues/805)
             // 查了很多资料，esbuild serve 不能响应 onRebuild， esbuild build 和 express 组合不能不写入文件
         } catch (e) {
-            console.log(11)
             console.log(e);
             process.exit(1);
         }
