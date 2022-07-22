@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "build": "node esbuild.js",
-    "dev": "pnpm build -- --watch",
+    "dev": "waffle-cli dev",
     "serve": " serve -p=8080 www/"
   },
   "keywords": [],
