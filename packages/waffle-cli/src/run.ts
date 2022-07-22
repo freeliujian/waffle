@@ -9,13 +9,13 @@ const cliPath = path.resolve(__dirname,'..');
 const start = (config:any) => {
   console.log('start');
   console.log(config);
-  const {mode} = config;
+  const {name} = config;
   
 }
 
 const run = async (config:any) => {
 
-  try {
+try {
     return start(config);
   } catch (e) {
     console.error(chalk.red(`启动失败`), e);

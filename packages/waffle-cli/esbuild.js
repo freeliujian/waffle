@@ -11,7 +11,8 @@ async function start() {
     bundle: true,
     outdir: 'lib',
     tsconfig: 'tsconfig.json',
-    platform:"node"
+    platform:"node",
+    external:'esbuild',
   })
 }
 
