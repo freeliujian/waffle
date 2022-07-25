@@ -1,8 +1,8 @@
 {
-  "name": "waffle-cli",
+  "name": "@fengbeans/waffle-cli",
   "version": "1.0.1",
   "description": "编写一个简单前端框架",
-  "main": "./bin/index.js",
+  "main": "./bin/waffle.js",
   "private": true,
   "scripts": {
     "build:ts": "tsc -w",
@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/freeliujian/waffle.git"
   },
-  "keywords": [],
+  "keywords": ["node","react","typescript"],
   "author": "jian.liu",
   "license": "ISC",
   "bugs": {

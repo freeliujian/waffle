@@ -1,7 +1,5 @@
 import {Command} from "commander";
 
-const run = require("./run");
-
 const program = new Command();
 
 program
@@ -31,17 +29,3 @@ program.command('dev').description('框架开发命令').action(function() {
 });
 
 program.parse(process.argv);
-
-// const args = yParser(process.argv.slice(2));
-// const name = args._[0] || "";
-// const { type } = args;
-// delete args.type;
-
-// (async () => {
-//   await run({
-//     name,
-//     type,
-//     args,
-//   });
-//   process.exit(0);
-// })();
