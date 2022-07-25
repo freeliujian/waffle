@@ -6,6 +6,7 @@ import { createServer } from 'http';
 import { DEFAULT_ENTRY_POINT, DEFAULT_OUTDIR, DEFAULT_PLATFORM, DEFAULT_PORT, DEFAULT_HOST, DEFAULT_BUILD_PORT } from './constants';
 import { createWebSocketServer } from './server';
 import { style } from './styles';
+import { getAppData } from './appData';
 
 export const dev = async () => {
     const cwd = process.cwd();
@@ -49,6 +50,9 @@ export const dev = async () => {
     waffleServe.listen(port, async () => {
         console.log(`App listening at http://${DEFAULT_HOST}:${port}`);
         try {
+            const appData = await getAppData({
+              cwd
+            });
             await build({
                 format: 'iife',
                 logLevel: 'error',
